@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Display</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #1b5e20;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    .logo-gallery {
+      display: flex;
+      gap: 80px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-item {
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .logo-item img {
+      width: 300px; /* bigger size */
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .logo-item:hover img {
+      transform: scale(1.1);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+    }
+
+    .logo-item .brand-name {
+      margin-top: 18px;
+      font-size: 1.5em;
+      color: #1b5e20;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .logo-gallery {
+        gap: 50px;
+      }
+
+      .logo-item img {
+        width: 250px;
+      }
+
+      .logo-item .brand-name {
+        font-size: 1.3em;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .logo-gallery {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .logo-item img {
+        width: 220px;
+      }
+
+      .logo-item .brand-name {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Logo Design</h1>
+
+  <div class="logo-gallery">
+    <div class="logo-item">
+      <img src="Assets/Luvoon.jpg" alt="Logo 1">
+      <div class="brand-name">Brand 1</div>
+    </div>
+
+    <div class="logo-item">
+      <img src="logo2.png" alt="Logo 2">
+      <div class="brand-name">Brand 2</div>
+    </div>
+
+    <div class="logo-item">
+      <img src="logo3.png" alt="Logo 3">
+      <div class="brand-name">Brand 3</div>
+    </div>
+  </div>
+
+</body>
+</html>

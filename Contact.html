@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Gurpreet Singh</title>
+  <style>
+    :root {
+      --green:#0f9d58;
+      --green-light:#e6f6ee;
+      --white:#ffffff;
+      --muted:#6b7280;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin:0;
+      background:linear-gradient(180deg,var(--white) 0%, var(--green-light) 100%);
+      color:#111;
+    }
+
+    .container {
+      max-width:900px;
+      margin:40px auto;
+      padding:20px;
+    }
+
+    header {
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+
+    .logo {
+      width:60px;height:60px;
+      border-radius:12px;
+      background:var(--green);
+      color:var(--white);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:bold;font-size:22px;
+    }
+
+    h1 {margin:0;}
+    p.lead {color:var(--muted);margin:6px 0 24px;}
+
+    .contact-item {
+      display:flex;gap:12px;align-items:flex-start;
+      padding:14px;margin-bottom:12px;
+      background:var(--white);
+      border-radius:10px;
+      border:1px solid #ddd;
+    }
+
+    .contact-item strong {display:block;color:#000;}
+    .contact-item a {color:var(--green);text-decoration:none;}
+
+    .map {margin-top:15px;border-radius:10px;overflow:hidden;}
+
+    .socials {display:flex;gap:10px;margin-top:15px;}
+    .socials a {
+      display:flex;align-items:center;justify-content:center;
+      width:40px;height:40px;
+      border-radius:8px;
+      background:var(--white);
+      text-decoration:none;
+      color:var(--green);
+      font-weight:bold;
+    }
+
+    footer {margin-top:20px;text-align:center;font-size:13px;color:var(--muted);}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">GS</div>
+      <div>
+        <h1>Gurpreet Singh</h1>
+        <p class="lead">Graphic Designer · Video Editor · 3D Artist</p>
+      </div>
+    </header>
+
+    <h2>Contact Details</h2>
+
+    <div class="contact-item">
+      <div>📍</div>
+      <div>
+        <strong>Studio</strong>
+        <span>Arjun Nagar, Rewari, Haryana, India</span>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div>📞</div>
+      <div>
+        <strong>Phone</strong>
+        <a href="tel:+911234567890">+91 82785 85732</a>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div>✉️</div>
+      <div>
+        <strong>Email</strong>
+      <a href="mailto:designerpreet@myyahoo,com?subject=Enquiry%20Mail&body=I%20Want%20some%20information%20about%20your%20Service">Designerpreet@myyahoo.com</a>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div>🕒</div>
+      <div>
+        <strong>Availability</strong>
+        <span>Mon – Sat:09:00 AM — 06:00 PM </span>
+      </div>
+    </div>
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="socials">
+      <a href="https://www.instagram.com/designer._.preet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">IG</a>
+      <a href="#">Be</a>
+      <a href="#">In</a>
+      <a href="#">YT</a>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Gurpreet Singh — All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Graphics Work</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f5fff6;
+      color: #1b5e20;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2em;
+    }
+
+    .section-title {
+      font-size: 1.6em;
+      margin: 20px 0;
+      color: #2e7d32;
+      border-left: 4px solid #2e7d32;
+      padding-left: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card p {
+      text-align: center;
+      padding: 10px;
+      font-weight: 500;
+      background-color: #e8f5e9;
+      margin: 0;
+    }
+
+    /* Optional styling for visual proportion difference */
+    .a4 img {
+      aspect-ratio: 1 / 1.414; /* A4 portrait */
+      object-fit: cover;
+    }
+
+    .landscape img {
+      aspect-ratio: 1350 / 1080; /* Landscape */
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Graphic Design Work</h1>
+
+  <div class="section-title">A4 Size Posters</div>
+  <div class="gallery">
+    <div class="card a4">
+      <img src="a4-1.jpg" alt="A4 Design 1">
+      <p>A4 Design 1</p>
+    </div>
+    <div class="card a4">
+      <img src="a4-2.jpg" alt="A4 Design 2">
+      <p>A4 Design 2</p>
+    </div>
+    <div class="card a4">
+      <img src="a4-3.jpg" alt="A4 Design 3">
+      <p>A4 Design 3</p>
+    </div>
+  </div>
+
+  <div class="section-title">1350x1080 Pixel Works</div>
+  <div class="gallery">
+    <div class="card landscape">
+      <img src="1350x1080-1.jpg" alt="1350x1080 Design 1">
+      <p>1350x1080 Design 1</p>
+    </div>
+    <div class="card landscape">
+      <img src="1350x1080-2.jpg" alt="1350x1080 Design 2">
+      <p>1350x1080 Design 2</p>
+    </div>
+    <div class="card landscape">
+      <img src="1350x1080-3.jpg" alt="1350x1080 Design 3">
+      <p>1350x1080 Design 3</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Scrolling iPhone X UI Designs</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      font-family: "Poppins", sans-serif;
+      color: #1b5e20;
+      margin: 0;
+      padding: 40px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+    }
+
+    /* Auto-scrolling container */
+    .scroll-container {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .scroll-track {
+      display: flex;
+      gap: 40px;
+      animation: scroll 25s linear infinite;
+    }
+
+    /* Each phone item */
+    .phone-item {
+      flex: 0 0 auto;
+      text-align: center;
+    }
+
+    /* iPhone X Frame */
+    .iphone {
+      position: relative;
+      width: 300px;
+      height: 650px;
+      border: 12px solid #111;
+      border-radius: 45px;
+      background: #000;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .iphone:hover {
+      transform: scale(1.05);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+    }
+
+    /* Notch */
+    .notch {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 30px;
+      background: #111;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      z-index: 2;
+    }
+
+    /* Screen */
+    .screen img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 32px;
+    }
+
+    /* Caption */
+    .caption {
+      margin-top: 12px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    /* Auto-scroll animation */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .iphone {
+        width: 260px;
+        height: 550px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Trainova UI Designs</h1>
+
+  <div class="scroll-container">
+    <div class="scroll-track">
+      <!-- Repeat phones for seamless looping -->
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 1.jpg" alt="UI Design 1"></div></div>
+        <div class="caption">Frame 1</div>
+      </div>
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 2.jpg" alt="UI Design 2"></div></div>
+        <div class="caption">Frame 2</div>
+      </div>
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 3.jpg" alt="UI Design 3"></div></div>
+        <div class="caption">Frame 3</div>
+      </div>
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 4.jpg" alt="UI Design 4"></div></div>
+        <div class="caption">Frame 4</div>
+      </div>
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 5.jpg" alt="UI Design 5"></div></div>
+        <div class="caption">Frame 5</div>
+      </div>
+      
+      <!-- Duplicate for seamless loop -->
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 1.jpg" alt="UI Design 1"></div></div>
+        <div class="caption">Frame 1</div>
+      </div>
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 2.jpg" alt="UI Design 2"></div></div>
+        <div class="caption">Frame 2</div>
+      </div>
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 3.jpg" alt="UI Design 3"></div></div>
+        <div class="caption">Frame 3</div>
+      </div>
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 4.jpg 1.jpg" alt="UI Design 4"></div></div>
+        <div class="caption">Frame 4</div>
+      </div>
+      <div class="phone-item">
+        <div class="iphone"><div class="notch"></div><div class="screen"><img src="Assets/UI DesignArtboard 5.jpg" alt="UI Design 5"></div></div>
+        <div class="caption">Frame 5</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

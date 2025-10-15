@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Contact Me</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+    .contact-section {
+        padding: 100px 20px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .contact-section h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #2c3e50;
+    }
+
+    .contact-section p {
+        font-size: 1.2rem;
+        color: #7f8c8d;
+        margin-bottom: 50px;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 1rem;
+        resize: none;
+    }
+
+    .contact-form textarea {
+        min-height: 150px;
+    }
+
+    .contact-form button {
+        padding: 15px 30px;
+        background-color: #27ae60;
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+        background-color: #2ecc71;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .contact-section h2 {
+            font-size: 2.5rem;
+        }
+
+        .contact-section p {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<section class="contact-section">
+    <h2>Contact Me</h2>
+    <p>If you have any project or collaboration in mind, feel free to reach out to me!</p>
+
+    <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</body>
+</html>
